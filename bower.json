@@ -1,5 +1,6 @@
 {
   "name": "getfit",
   "dependencies": {
+    "firebase": "^3.0.0"
   }
 }

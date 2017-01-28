@@ -1,5 +1,7 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
+<!-- Navigation and Auth -->
+FireBase Google Authentication
+{{navigation-auth session=session signOut="signOut" signIn="signIn"}}
 
-{{outlet}}
+{{#if session.isAuthenticated}}
+	{{outlet}}
+{{/if}}

@@ -1,0 +1,5 @@
+{{#if session.isAuthenticated}}
+    <span>welcome {{session.currentUser.displayName}} - <button {{action "signOut"}}>Sign out</button></span>
+{{else}}
+		<button {{action "signIn" "google"}}>Google</button>  
+{{/if}}	
